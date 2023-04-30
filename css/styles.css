@@ -1,0 +1,428 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body {
+    /*font-family: 'Forum', cursive;*/
+    font-family: 'Forum', sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+
+:root {
+    --black: #000;
+    --olive: #6D7A5E;
+    --brown: #1D1D1B;
+    --gray: #565656;
+    --beige: #D2C9B5;
+    --white: #FFF;
+    --silver: #D9D9D9;
+    --ivory: #EAE6DD;
+}
+
+img {
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1165px;
+    margin: auto;
+}
+
+a {
+    color: var(--black);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*------------------------------------------*/
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 290px;
+    height: 1px;
+    background-color: var(--black);
+    opacity: 1;
+    left: 37%;
+}
+
+.button {
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--olive);
+    border: none;
+}
+
+.header-container {
+    display: flex;
+    gap: 174px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0 12px 0;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 218px;
+}
+
+.header-list {
+    display: flex;
+    gap: 70px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-basket-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.header-basket-btn-total{
+    background-color: var(--silver);
+    border-radius: 50%;
+    padding: 3px 5px;
+    position: absolute;
+    right: -7px;
+    top: -5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 257px 0 235px 0;
+    background-image: url(../images/header-hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.header-hero-title {
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--white);
+    margin-bottom: 14px;
+}
+
+.header-hero-descr {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    margin-bottom: 101px;
+}
+
+.header-hero-btn {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+    padding: 26px 59px;
+    background-color: var(--olive);
+    border: none;
+}
+
+.bestseller-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.item-bestseller-descr {
+    padding: 0 17px;
+    text-align: center;
+}
+
+.bestsellers-list {
+    display: flex;
+    gap: 56px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.bestseller-title {
+    margin-top: 9px;
+}
+
+.bestseller-price {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.bestsellers {
+    margin: 200px 0;
+}
+
+.container-bestsellers {
+    width: 1137px;
+}
+
+.about-us-top, .about-us-bottom {
+    display: flex;
+    gap: 73px;
+}
+
+.about-us-text {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 563px;
+}
+
+.about-us-text > p {
+    margin-bottom: 15px;
+}
+
+.about-us-bottom-img {
+    margin: -211px 0 0 0;
+}
+
+.about-us-text-top {
+    margin-top: 156px;
+}
+
+.about-us-text-bottom {
+    margin-top: 75px;
+}
+
+section.about-us {
+    margin: 200px 0;
+}
+
+.instagram {
+    text-align: center;
+    background-color: var(--ivory);
+    background-image: url("../images/img-instagram-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 200px 0 200px 0;
+    padding: 59px 0 38px 0;
+}
+
+.instagram-text {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    margin: 74px 0 24px 0;
+    padding: 0 107px;
+}
+
+.instagram-img {
+    margin: auto;
+}
+
+
+.instagram-btn {
+    font-size: 24px;
+    padding: 24px 35px;
+}
+
+.certificate-list {
+    display: flex;
+    gap: 48px;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.container-certificate {
+    width: 1203px;
+}
+
+.certificate {
+    margin-bottom: 328px;
+}
+
+.present {
+    margin-bottom: 200px;
+}
+
+.present-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 56px;
+}
+
+.present-inner-title {
+    font-size: 36px;
+    font-weight: 400;
+    position: absolute;
+    left: 551px;
+    top: 32px;
+}
+
+.list-present {
+    text-align: center;
+    margin-top: 90px;
+    position: absolute;
+    right: 105px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.present-li {
+    margin: 20px 0;
+}
+
+.present-btn {
+    padding: 24px 89px;
+    font-size: 24px;
+    position: absolute;
+    bottom: 93px;
+    right: 135px;
+}
+
+.reviews-inner {
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+}
+
+.reviews {
+    margin-bottom: 200px;
+}
+
+.delivery-payment-inner {
+    margin-top: 56px;
+    padding: 44px 0;
+    background-color: var(--ivory);
+    text-align: center;
+    font-size: 24px;
+
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray);
+    opacity: 0.5;
+}
+
+.payment-inner, .delivery-inner {
+    display: flex;
+    width: 970px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery-inner {
+    margin-top: 25px;
+}
+
+.payment-inner-text {
+    margin: 37px 151px 27px 151px;
+}
+
+.payment-inner-text > p {
+    margin-top: 20px;
+}
+
+.delivery-free {
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.payment-inner-arrow, .delivery-inner-arrow {
+    margin: 0 16px;
+}
+
+.delivery-payment {
+    margin-bottom: 243px;
+}
+
+.footer {
+    background-color: var(--beige);
+    padding-top: 34px;
+    padding-bottom: 184px;
+}
+
+
+.catalog-list > span {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.footer-list {
+    font-size: 24px;
+
+}
+
+.footer-item {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.icon-email, .icon-tel, .icon-instagram {
+    margin-right: 12px;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 106px;
+}
+
+.footer-link-logo{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footer-payment{
+    display: flex;
+    gap: 37px;
+    margin-top: 53px;
+}
+
