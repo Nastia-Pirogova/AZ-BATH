@@ -5,7 +5,6 @@
 }
 
 .body {
-    /*font-family: 'Forum', cursive;*/
     font-family: 'Forum', sans-serif;
     background: var(--white);
     color: var(--black);
