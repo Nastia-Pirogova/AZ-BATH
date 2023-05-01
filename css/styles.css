@@ -191,8 +191,6 @@ hr {
     margin-right: 12px;
 }
 
-
-
 .footer-link-logo {
     font-weight: 400;
     font-size: 24px;
@@ -950,9 +948,13 @@ a.footer-logo > h2{
     }
 
     .catalog-list-contact-mobile{
-        display: none;
+        display: none !important;
     }
     .catalog-list-contact{
         display:block;
+    }
+    .footer-link-logo {
+        font-weight: 400;
+        font-size: 24px;
     }
 }
