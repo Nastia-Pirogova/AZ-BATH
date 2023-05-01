@@ -13,7 +13,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet"  href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="body">
 <header class="header">
@@ -25,7 +25,7 @@
                 </svg>
             </a>
             <ul class="header-list list ">
-                <li class="header-item "><a class="header-link link " href="index.html">Каталог</a>
+                <li class="header-item "><a class="header-link link " href="#">Каталог</a>
                 </li>
                 <li class="header-item "><a class="header-link link " href="#delivery-payment">Доставка</a>
                 </li>
@@ -37,14 +37,42 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="header-basket-btn">
-            <svg class="header-icon-basket" width="32" height="40">
-                <use href="./images/icons.svg#icon-basket"></use>
-            </svg>
-            <span class="header-basket-btn-total">0</span>
-        </button>
+        <div class="mobile-btn-right">
+            <button type="button" class="header-basket-btn">
+                <svg class="header-icon-basket" width="32" height="40">
+                    <use href="./images/icons.svg#icon-basket"></use>
+                </svg>
+                <span class="header-basket-btn-total">0</span>
+            </button>
+            <button type="button" class="mobile-menu-open-btn js-open-menu" data-menu-open="" aria-expanded="false">
+                <svg class="mobile-menu-icon" width="36px" height="30px">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </header>
+
+<div class="mobile-menu js-menu-container ">
+    <button type="button" class="modal-btn-close js-close-menu">
+        <svg class="modal-close-svg" width="8px" height="8px">
+            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
+        </svg>
+    </button>
+    <ul class="mobile-header-list list ">
+        <li class="mobile-header-item"><a class="mobile-header-link link " href="#">Каталог</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#delivery-payment">Доставка</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#reviews">Відгуки</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#certificate">Сертифікати</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
+        </li>
+    </ul>
+</div>
+
 <main>
     <section class="hero section hero-bg">
         <div class="container">
@@ -59,7 +87,7 @@
             <ul class="bestsellers-list list">
                 <li>
                     <a href="#" class="item-bestseller">
-                        <img src="./images/bestseller-1.jpg " alt="product" width="342" height="404">
+                        <img src="./images/bestseller-1.jpg " class="bestseller-img" alt="product" width="342" height="404">
                         <div class="item-bestseller-descr">
                             <h3 class="bestseller-title">AZ BATH SHAMPОО для всіх типів волосся</h3>
                             <span class="bestseller-price">
@@ -71,7 +99,7 @@
                 </li>
                 <li>
                     <a href="#" class="item-bestseller">
-                        <img src="./images/bestseller-2.jpg " alt="product" width="342" height="404">
+                        <img src="./images/bestseller-2.jpg " class="bestseller-img" alt="product" width="342" height="404">
                         <div class="item-bestseller-descr">
                             <h3 class="bestseller-title bestseller-title-2">Олія для тіла AZ BATH</h3>
                             <span class="bestseller-price">
@@ -83,7 +111,7 @@
                 </li>
                 <li>
                     <a href="#" class="item-bestseller">
-                        <img src="./images/bestseller-3.jpg " alt="product" width="342" height="404">
+                        <img src="./images/bestseller-3.jpg " class="bestseller-img" alt="product" width="342" height="404">
                         <div class="item-bestseller-descr">
                             <h3 class="bestseller-title">Олія для кінчиків волосся AZ BATH</h3>
                             <span class="bestseller-price">
@@ -99,9 +127,9 @@
         </div>
     </section>
     <section class="about-us">
-        <div class="container">
+        <div class="container about-us-container">
             <div class="about-us-top">
-                <img src="images/about-us-1.jpg" width="538" height="666" alt="girl">
+                <img src="images/about-us-1.jpg" class="about-us-img" width="538" height="666" alt="girl">
                 <div class="about-us-text about-us-text-top">
                     <p>
                         Ми український бренд косметики для догляду AZ BATH.
@@ -128,7 +156,8 @@
                         засіб
                         для захисту від сонячних променів під час засмаги.
                     </p></div>
-                <img src="images/about-us-2.jpg" class="about-us-bottom-img" width="532" height="666" alt="hair">
+                <img src="images/about-us-2.jpg"  class="about-us-bottom-img about-us-img" width="532" height="666" alt="hair">
+                <img src="images/about-us-2-mobile.jpg"  class=" about-us-bottom-img-mobile" width="186" height="425" alt="hair">
             </div>
         </div>
     </section>
@@ -145,13 +174,13 @@
             <h2 class="title">КОЖЕН ПРОДУКТ Є СЕРТИФІКОВАНИМ</h2>
             <ul class="certificate-list list">
                 <li>
-                    <img src="./images/certificate-1.jpg " alt="certificate" width="369" height="518">
+                    <img src="./images/certificate-1.jpg " class="certificate-img" alt="certificate" width="369" height="518">
                 </li>
                 <li>
-                    <img src="./images/certificate-2.jpg " alt="certificate" width="369" height="518">
+                    <img src="./images/certificate-2.jpg " class="certificate-img" alt="certificate" width="369" height="518">
                 </li>
                 <li>
-                    <img src="./images/certificate-3.jpg " alt="certificate" width="369" height="518">
+                    <img src="./images/certificate-3.jpg " class="certificate-img" alt="certificate" width="369" height="518">
                 </li>
             </ul>
         </div>
@@ -160,7 +189,9 @@
         <div class="container container-present">
             <h2 class="title">ЗАМОВЛЯЙ ДВІ ОЛІЙКИ ДЛЯ ТІЛА - І ОТРИМУЙ ТРЕТЮ У ПОДАРУНОК!</h2>
             <div class="present-inner">
-                <img src="./images/img-present.jpg" alt="product-present" width="718" height="696">
+                <img src="./images/img-present.jpg" class="present-img" alt="product-present" width="718" height="696">
+                <img src="./images/img-present-mobile.jpg" class="present-img-mobile" alt="product-present" width="159" height="266">
+
                 <div class="present-inner-text">
                     <h2 class="present-inner-title">У комбо входить З олії для тіла на вибір </h2>
                     <ul class="list-present">
@@ -174,22 +205,22 @@
                     <button type="button" class="present-btn button">ЗАМОВИТИ</button>
                 </div>
             </div>
-
         </div>
     </section>
+
     <section class="reviews" id="reviews">
         <div class="container container-reviews">
             <h2 class="title">ВІДГУКИ НА НАШУ КОСМЕТИКУ</h2>
             <div class="reviews-inner">
                 <ul class="reviews-list">
-                    <li class="reviews-li"><img src="./images/reviews-1.jpg" alt="reviews"></li>
-                    <li class="reviews-li"><img src="./images/reviews-2.jpg" alt="reviews"></li>
-                    <li class="reviews-li"><img src="./images/reviews-3.jpg" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-1.jpg" class="reviews-img" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-2.jpg" class="reviews-img" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-3.jpg" class="reviews-img" alt="reviews"></li>
                 </ul>
                 <ul class="reviews-list">
-                    <li class="reviews-li"><img src="./images/reviews-4.jpg" alt="reviews"></li>
-                    <li class="reviews-li"><img src="./images/reviews-5.jpg" alt="reviews"></li>
-                    <li class="reviews-li"><img src="./images/reviews-6.jpg" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-4.jpg" class="reviews-img" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-5.jpg" class="reviews-img" alt="reviews"></li>
+                    <li class="reviews-li"><img src="./images/reviews-6.jpg" class="reviews-img" alt="reviews"></li>
                 </ul>
             </div>
         </div>
@@ -206,12 +237,18 @@
                         <svg class="payment-inner-arrow" width="99" height="10">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
+                        <svg class="payment-inner-arrow-mobile" width="30" height="10">
+                            <use href="./images/icons.svg#icon-arrow-mini"></use>
+                        </svg>
                         <p class="payment-inner-p">Повна онлайн оплата на рахунок ФОП</p>
                     </div>
                     <div class="delivery-inner">
                         <div class="delivery-inner-title">ДОСТАВКА</div>
                         <svg class="delivery-inner-arrow" width="99" height="10">
                             <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <svg class="payment-inner-arrow-mobile" width="30" height="10">
+                            <use href="./images/icons.svg#icon-arrow-mini"></use>
                         </svg>
                         <p class="delivery-inner-p">Відправлення Новою поштою та Укрпоштою протягом 1-3 днів</p>
                     </div>
@@ -231,12 +268,14 @@
     <footer class="footer" id="footer">
         <div class="container">
             <nav class="footer-navigation ">
+                <div class="footer-navigation-mobile">
                 <a href="index.html" class="footer-logo">
                     <svg class="icon-logo" width="65.08" height="94.73">
                         <use href="./images/icons.svg#icon-logo-header"></use>
                     </svg>
                     <h2>AZ BATH</h2>
                 </a>
+
                 <div class="catalog-list"><span>КАТАЛОГ</span>
                     <ul class="footer-list list ">
                         <li class="footer-item "><a class="footer-link link " href="#">Для волосся</a>
@@ -263,7 +302,48 @@
                     </ul>
                 </div>
 
-                <div class="catalog-list"><span>КОНТАКТНА ІНФОРМАЦІЯ</span>
+                    <div class="catalog-list catalog-list-contact "><span>КОНТАКТНА ІНФОРМАЦІЯ</span>
+                        <ul class="footer-list list ">
+                            <li class="footer-item "><a class="footer-link link footer-link-logo" href="https://www.instagram.com/az_bath/">
+                                <svg class="icon-instagram" width="30" height="30">
+                                    <use href="./images/icons.svg#icon-logo-instagram"></use>
+                                </svg>
+                                az_bath</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="mailto:azbathstore@gmail.com">
+                                <svg class="icon-email" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                azbathstore@gmail.com</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="tel:+380938329293">
+                                <svg class="icon-tel" width="30" height="30">
+                                    <use href="./images/icons.svg#icon-logo-tel"></use>
+                                </svg>
+                                0938329293</a>
+                            </li>
+                            <li class="footer-payment">
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="15">
+                                        <use href="./images/icons.svg#icon-visa"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="19">
+                                        <use href="./images/icons.svg#icon-google-pay"></use>
+                                    </svg></a>
+                                </div>
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="21">
+                                        <use href="./images/icons.svg#icon-apple-pay"></use>
+                                    </svg></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+                <div class="catalog-list catalog-list-contact catalog-list-contact-mobile"><span>КОНТАКТНА ІНФОРМАЦІЯ</span>
                     <ul class="footer-list list ">
                         <li class="footer-item "><a class="footer-link link footer-link-logo" href="https://www.instagram.com/az_bath/">
                             <svg class="icon-instagram" width="30" height="30">
@@ -307,5 +387,7 @@
         </div>
     </footer>
 </main>
+
+<script src="./js/mobile-menu.js" type="module"></script>
 </body>
 </html>
