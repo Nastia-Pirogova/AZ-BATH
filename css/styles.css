@@ -635,6 +635,11 @@ a.footer-logo > h2{
 .delivery-payment {
     margin-bottom: 80px;
 }
+
+.delivery-inner-p {
+    width: 173px;
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
@@ -997,6 +1002,9 @@ a.footer-logo > h2{
         display: block;
         height: 696px;
         width: 718px;
+    }
 
+    .delivery-inner-p {
+        width: 100%;
     }
 }
