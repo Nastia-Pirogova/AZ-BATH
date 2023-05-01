@@ -619,10 +619,22 @@ a.footer-logo > h2{
     margin-top: 20px;
 }
 
+.icon-logo{
+    height: 57px;
+    width: 39px;
+}
+
+
+
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
         margin: auto;
+    }
+    .icon-logo{
+        height: 94.73px;
+        width: 65.08px;
     }
 
     .mobile-menu-open-btn {
