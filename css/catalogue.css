@@ -75,7 +75,7 @@
 ul.catalog-products {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px 37px;
+    gap: 80px 37px;
     width: 307px;
 }
 
