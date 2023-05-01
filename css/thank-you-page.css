@@ -1,0 +1,52 @@
+:root {
+    --black: #000;
+    --olive: #6D7A5E;
+    --brown: #1D1D1B;
+    --gray: #565656;
+    --beige: #D2C9B5;
+    --white: #FFF;
+    --silver: #D9D9D9;
+    --ivory: #EAE6DD;
+}
+
+
+.thank {
+margin: 20px 0 114px 0;
+}
+
+.thank-text{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 78px 34px;
+}
+
+.thank-img-mobile {
+    display: block;
+    margin: auto;
+}
+
+.thank-img {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .thank-img {
+        display: block;
+        margin: auto;
+    }
+
+    .thank-img-mobile {
+        display: none;
+    }
+    .thank-text{
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .thank {
+        margin: 115px 0 146px 0;
+    }
+}
