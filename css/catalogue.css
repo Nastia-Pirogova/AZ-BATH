@@ -90,7 +90,9 @@ section.catalogue {
 }
 
 @media screen and (min-width: 1200px) {
-
+    .catalogue-filters{
+        border: none;
+    }
     .breadcrumb-section {
         margin: 67px 0 10px 0;
     }
