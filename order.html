@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/order.css">
+
+</head>
+<body class="body">
+<header class="header">
+    <div class="container header-container">
+        <nav class="header-navigation ">
+            <a href="index.html" class="header-logo">
+                <svg class="icon-logo" width="65.08" height="94.73">
+                    <use href="./images/icons.svg#icon-logo-header"></use>
+                </svg>
+            </a>
+            <ul class="header-list list ">
+                <li class="header-item "><a class="header-link link " href="catalogue.html">Каталог</a>
+                </li>
+                <li class="header-item "><a class="header-link link " href="#delivery-payment">Доставка</a>
+                </li>
+                <li class="header-item "><a class="header-link link " href="#reviews">Відгуки</a>
+                </li>
+                <li class="header-item "><a class="header-link link " href="#certificate">Сертифікати</a>
+                </li>
+                <li class="header-item "><a class="header-link link " href="#footer">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-btn-right">
+            <button type="button" class="header-basket-btn">
+                <svg class="header-icon-basket" width="32" height="40">
+                    <use href="./images/icons.svg#icon-basket"></use>
+                </svg>
+                <span class="header-basket-btn-total">0</span>
+            </button>
+            <button type="button" class="mobile-menu-open-btn js-open-menu" data-menu-open="" aria-expanded="false">
+                <svg class="mobile-menu-icon" width="36px" height="30px">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu js-menu-container ">
+    <button type="button" class="modal-btn-close js-close-menu">
+        <svg class="modal-close-svg" width="8px" height="8px">
+            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
+        </svg>
+    </button>
+    <ul class="mobile-header-list list ">
+        <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#delivery-payment">Доставка</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#reviews">Відгуки</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#certificate">Сертифікати</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
+        </li>
+    </ul>
+</div>
+
+<main>
+
+    <section class="ordering">
+        <div class="container">
+            <h2 class="ordering-title">ОФОРМЛЕННЯ ЗАМОВЛЕННЯ</h2>
+            <div class="ordering-container ">
+                <form class="ordering-form">
+                    <h3 class="ordering-title-descr">Одержувач замовлення</h3>
+                    <div class="ordering-form-wrap">
+                        <label class="ordering-form-label" for="ordering-name">ПІБ</label>
+                        <input type="name" name="name" placeholder="" required="" class="ordering-form-input"
+                               id="ordering-name">
+                    </div>
+                    <div class="ordering-form-wrap">
+                        <label class="ordering-form-label" for="ordering-tel">Телефон</label>
+                        <input type="tel" name="tel" placeholder="" required="" class="ordering-form-input"
+                               id="ordering-tel">
+                    </div>
+                    <div class="ordering-form-wrap">
+                        <label class="ordering-form-label" for="ordering-city">Місто</label>
+                        <input type="" placeholder="Введіть назву міста" required="" class="ordering-form-input"
+                               id="ordering-city">
+                    </div>
+                    <div class="ordering-form-wrap">
+                        <label class="ordering-form-label" for="ordering-email">Email</label>
+                        <input type="email" name="email" placeholder="" required="" class="ordering-form-input"
+                               id="ordering-email">
+                    </div>
+
+                    <div class="ordering-form-wrap ordering-form-wrap-bottom">
+                        <label class="ordering-form-label" for="input-post">Доставка</label>
+                        <select class="form-field-input form-field-input-post ordering-form-input" name="quantity"
+                                id="input-post" required="">
+                            <option value="Новою поштою">Новою поштою</option>
+                            <option value="Укрпоштою">Укрпоштою</option>
+                            <option value="Самовивіз">Самовивіз</option>
+                        </select>
+                    </div>
+                    <div class="ordering-form-wrap">
+                        <label class="ordering-form-label" for="input-address">Відділення</label>
+                        <select class=" form-field-input-post form-field-input-address ordering-form-input"
+                                name="quantity" id="input-address"
+                                required="">
+                            <option value="">Відділеня №1 Бульвар Ювілейний 1</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+
+                    <div class="ordering-form-wrap ordering-form-wrap-bottom">
+                        <label class="ordering-form-label" for="input-payment">Оплата</label>
+                        <select class="form-field-input form-field-input-payment ordering-form-input" name="quantity"
+                                id="input-payment"
+                                required="">
+                            <option value="Оплата онлайн картою">Оплата онлайн картою</option>
+                            <option value="">Оплата при отриманні</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="product-list-result">
+                    <h2>Ваше замовлення</h2>
+                        <ul class="product-list-product">
+                            <li class="product-list-product-item">
+                                <div class="product-box">
+                                    <img class="product-box-img" src="./images/catalog-product-13.jpg"
+                                         alt="Комбо олій 1+1=3">
+                                    <div class="product-box-info">
+                                        <h4 class="product-info-title">Комбо олій 1+1=3</h4>
+                                        <div class="product-info-price">
+                                            <div class="product-info-price-item">
+                                                <button type="button" class="minus minus-btn">-</button>
+                                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                                       data-id="price-from" data-label="" class="product-info-price-item-input">
+                                                <button type="button" class="plus plus-btn">+</button>
+                                            </div>
+                                            <div class="product-info-price-value">
+                                                <span><span>1430</span>₴</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="product-delivery"><p>Доставка </p><span>За тарифами перевізника</span></div>
+                        <div class="product-total-price"><p>Всього</p> <span><span>1430</span>₴</span></div>
+                </div>
+
+            </div>
+            <button class="ordering-form-btn button" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <nav class="footer-navigation ">
+                <div class="footer-navigation-mobile">
+                    <a href="index.html" class="footer-logo">
+                        <svg class="icon-logo" width="65.08" height="94.73">
+                            <use href="./images/icons.svg#icon-logo-header"></use>
+                        </svg>
+                        <h2>AZ BATH</h2>
+                    </a>
+
+                    <div class="catalog-list"><span>КАТАЛОГ</span>
+                        <ul class="footer-list list ">
+                            <li class="footer-item "><a class="footer-link link " href="#">Для волосся</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Для тіла</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Для обличчя</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Набори</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Аромадифузори</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-list"><span>КЛІЄНТАМ</span>
+                        <ul class="footer-list list ">
+                            <li class="footer-item "><a class="footer-link link " href="#">Сертифікати</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Оплата і доставка</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="#">Відгуки</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-list catalog-list-contact "><span>КОНТАКТНА ІНФОРМАЦІЯ</span>
+                        <ul class="footer-list list ">
+                            <li class="footer-item "><a class="footer-link link footer-link-logo"
+                                                        href="https://www.instagram.com/az_bath/">
+                                <svg class="icon-instagram" width="30" height="30">
+                                    <use href="./images/icons.svg#icon-logo-instagram"></use>
+                                </svg>
+                                az_bath</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="mailto:azbathstore@gmail.com">
+                                <svg class="icon-email" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                                          stroke="black" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="black" stroke-width="2"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                azbathstore@gmail.com</a>
+                            </li>
+                            <li class="footer-item "><a class="footer-link link " href="tel:+380938329293">
+                                <svg class="icon-tel" width="30" height="30">
+                                    <use href="./images/icons.svg#icon-logo-tel"></use>
+                                </svg>
+                                0938329293</a>
+                            </li>
+                            <li class="footer-payment">
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="15">
+                                        <use href="./images/icons.svg#icon-visa"></use>
+                                    </svg>
+                                </a>
+                                </div>
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="19">
+                                        <use href="./images/icons.svg#icon-google-pay"></use>
+                                    </svg>
+                                </a>
+                                </div>
+                                <div class="footer-item "><a class="footer-link link " href="#">
+                                    <svg class="visa" width="50" height="21">
+                                        <use href="./images/icons.svg#icon-apple-pay"></use>
+                                    </svg>
+                                </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-list catalog-list-contact catalog-list-contact-mobile">
+                    <span>КОНТАКТНА ІНФОРМАЦІЯ</span>
+                    <ul class="footer-list list ">
+                        <li class="footer-item "><a class="footer-link link footer-link-logo footer-link-mobile"
+                                                    href="https://www.instagram.com/az_bath/">
+                            <svg class="icon-instagram" width="30" height="30">
+                                <use href="./images/icons.svg#icon-logo-instagram"></use>
+                            </svg>
+                            az_bath</a>
+                        </li>
+                        <li class="footer-item "><a class="footer-link link footer-link-mobile"
+                                                    href="mailto:azbathstore@gmail.com">
+                            <svg class="icon-email" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 5H25C26.375 5 27.5 6.125 27.5 7.5V22.5C27.5 23.875 26.375 25 25 25H5C3.625 25 2.5 23.875 2.5 22.5V7.5C2.5 6.125 3.625 5 5 5Z"
+                                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M27.5 7.5L15 16.25L2.5 7.5" stroke="black" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            azbathstore@gmail.com</a>
+                        </li>
+                        <li class="footer-item "><a class="footer-link link footer-link-mobile"
+                                                    href="tel:+380938329293">
+                            <svg class="icon-tel" width="30" height="30">
+                                <use href="./images/icons.svg#icon-logo-tel"></use>
+                            </svg>
+                            0938329293</a>
+                        </li>
+                        <li class="footer-payment">
+                            <div class="footer-item "><a class="footer-link link " href="#">
+                                <svg class="visa" width="50" height="15">
+                                    <use href="./images/icons.svg#icon-visa"></use>
+                                </svg>
+                            </a>
+                            </div>
+                            <div class="footer-item "><a class="footer-link link " href="#">
+                                <svg class="visa" width="50" height="19">
+                                    <use href="./images/icons.svg#icon-google-pay"></use>
+                                </svg>
+                            </a>
+                            </div>
+                            <div class="footer-item "><a class="footer-link link " href="#">
+                                <svg class="visa" width="50" height="21">
+                                    <use href="./images/icons.svg#icon-apple-pay"></use>
+                                </svg>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</main>
+
+<script src="./js/mobile-menu.js" type="module"></script>
+</body>
+</html>
