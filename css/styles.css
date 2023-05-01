@@ -130,9 +130,7 @@ button {
     margin-bottom: 328px;
 }
 
-.present {
-    margin-bottom: 200px;
-}
+
 
 .present-inner {
     display: flex;
@@ -624,9 +622,20 @@ a.footer-logo > h2{
     width: 39px;
 }
 
+.title-present {
+    width: 320px;
+    text-align: center;
+    margin: auto;
+}
 
+.container-present {
+    width: 320px;
+    margin: auto;
+}
 
-
+.present {
+    margin-bottom: 80px;
+}
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
@@ -968,5 +977,17 @@ a.footer-logo > h2{
     .footer-link-logo {
         font-weight: 400;
         font-size: 24px;
+    }
+    .title-present {
+        width:100%;
+        text-align: center;
+        margin: auto;
+    }
+    .container-present {
+        width: 1200px !important;
+        margin: auto;
+    }
+    .present {
+        margin-bottom: 200px;
     }
 }
