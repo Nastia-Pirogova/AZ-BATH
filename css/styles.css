@@ -162,13 +162,6 @@ hr {
     margin: 0 16px;
 }
 
-.delivery-payment {
-    margin-bottom: 243px;
-}
-
-
-
-
 .catalog-list > span {
     font-weight: 400;
     font-size: 36px;
@@ -636,6 +629,10 @@ a.footer-logo > h2{
 .present {
     margin-bottom: 80px;
 }
+
+.delivery-payment {
+    margin-bottom: 80px;
+}
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
@@ -989,5 +986,8 @@ a.footer-logo > h2{
     }
     .present {
         margin-bottom: 200px;
+    }
+    .delivery-payment {
+        margin-bottom: 243px;
     }
 }
