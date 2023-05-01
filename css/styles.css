@@ -363,10 +363,6 @@ hr {
     text-align: center;
 }
 
-/*.about-us-container{*/
-/*    width: 100% !important;*/
-/*}*/
-
 .about-us-text {
     font-weight: 400;
     font-size: 14px;
@@ -618,7 +614,6 @@ a.footer-logo > h2{
 }
 
 .container-present {
-    /*width: 320px;*/
     margin: auto;
 }
 
@@ -750,9 +745,6 @@ a.footer-logo > h2{
         width: 100%;
     }
 
-    /*.about-us-container{*/
-    /*    width: 1165px !important;*/
-    /*}*/
     .about-us-text {
         font-size: 24px;
         width: 563px;
@@ -865,9 +857,6 @@ a.footer-logo > h2{
         right: 135px;
     }
 
-    /*.present-img {*/
-    /*    display: block;*/
-    /*}*/
 
     .reviews-inner {
         display: flex;
@@ -893,7 +882,6 @@ a.footer-logo > h2{
     }
 
     .payment-inner-text {
-        /*margin: 37px 151px 27px 151px;*/
         font-size: 24px;
     }
 
