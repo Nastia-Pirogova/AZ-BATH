@@ -613,6 +613,9 @@ a.footer-logo > h2{
 .catalog-list-contact-mobile{
     display: block;
 }
+.footer-link-mobile{
+    justify-content: center;
+}
 
 @media screen and (min-width: 1200px) {
     .container {
