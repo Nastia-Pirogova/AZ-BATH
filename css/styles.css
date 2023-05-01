@@ -617,6 +617,10 @@ a.footer-logo > h2{
     justify-content: center;
 }
 
+.payment-inner-text > p {
+    margin-top: 20px;
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
@@ -873,9 +877,7 @@ a.footer-logo > h2{
         font-size: 24px;
     }
 
-    .payment-inner-text > p {
-        margin-top: 20px;
-    }
+
 
     .delivery-free {
         padding-bottom: 20px;
