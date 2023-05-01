@@ -448,9 +448,9 @@ hr {
     margin-bottom: 80px;
 }
 
-.present-img-mobile {
-    display: block;
-}
+/*.present-img-mobile {*/
+/*    display: block;*/
+/*}*/
 
 
 .present-inner-title {
@@ -458,7 +458,9 @@ hr {
 }
 
 .present-img {
-    display: none;
+    display: block;
+    width: 169px;
+    height: 223px;
 }
 
 .list-present {
@@ -829,9 +831,9 @@ a.footer-logo > h2{
         margin-bottom: 328px;
     }
 
-    .present-img-mobile {
-        display: none;
-    }
+    /*.present-img-mobile {*/
+    /*    display: none;*/
+    /*}*/
 
     .present-inner-title {
         font-size: 36px;
@@ -989,5 +991,12 @@ a.footer-logo > h2{
     }
     .delivery-payment {
         margin-bottom: 243px;
+    }
+
+    .present-img {
+        display: block;
+        height: 696px;
+        width: 718px;
+
     }
 }
