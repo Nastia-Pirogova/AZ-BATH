@@ -42,7 +42,7 @@
             </ul>
         </nav>
         <div class="mobile-btn-right">
-            <button type="button" class="header-basket-btn">
+            <button type="button" class="header-basket-btn" data-modal-open>
                 <svg class="header-icon-basket" width="32" height="40">
                     <use href="./images/icons.svg#icon-basket"></use>
                 </svg>
@@ -420,7 +420,14 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="basket-mobile">
-        <h2>Ваше замовлення</h2>
+        <div class="basket-mobile-top">
+            <button type="button" class="basket-mobile-btn-close" data-modal-close="">
+                <svg class="modal-close-svg" width="17px" height="17px">
+                    <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <h2 class="basket-mobile-title">Кошик</h2>
+        </div>
         <ul class="basket-mobile-list">
             <li class="basket-mobile-list-product-item">
                 <a href="#" class="basket-mobile-box">
@@ -428,30 +435,58 @@
                          alt="Комбо олій 1+1=3">
                     <div class="basket-mobile-box-info">
                         <h4 class="basket-mobile-info-title">Комбо олій 1+1=3</h4>
+                        <div class="basket-mobile-info-price-value">
+                            <span><span>1430</span>₴</span>
+                        </div>
                         <div class="basket-mobile-info-price">
                             <div class="basket-mobile-info-price-item">
-                                <button type="button" class="minus minus-btn">-</button>
-                                <input type="text" id="price-from" name="" value="1" data-min="1"
+                                <button type="button" class="minus minus-btn basket-minus-btn">-</button>
+                                <input type="number" id="price-from" name="" value="1" data-min="1"
                                        data-id="price-from" data-label="" class="basket-mobile-info-price-item-input">
-                                <button type="button" class="plus plus-btn">+</button>
+                                <button type="button" class="plus plus-btn basket-plus-btn">+</button>
                             </div>
-                            <div class="basket-mobile-info-price-value">
-                                <span><span>1430</span>₴</span>
-                            </div>
-
+                            <button class="basket-mobile-trash-btn button" type="button">
+                                <svg class="trash-btn-logo" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-trash"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <button class="basket-mobile-form-btn button" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                    </div>
+                </a>
+            </li>
+            <li class="basket-mobile-list-product-item">
+                <a href="#" class="basket-mobile-box">
+                    <img class="basket-mobile-box-img" src="./images/catalog-product-13.jpg"
+                         alt="Комбо олій 1+1=3">
+                    <div class="basket-mobile-box-info">
+                        <h4 class="basket-mobile-info-title">Комбо олій 1+1=3</h4>
+                        <div class="basket-mobile-info-price-value">
+                            <span><span>1430</span>₴</span>
+                        </div>
+                        <div class="basket-mobile-info-price">
+                            <div class="basket-mobile-info-price-item">
+                                <button type="button" class="minus minus-btn basket-minus-btn">-</button>
+                                <input type="number" id="" name="" value="1" data-min="1"
+                                       data-id="price-from" data-label="" class="basket-mobile-info-price-item-input">
+                                <button type="button" class="plus plus-btn basket-plus-btn">+</button>
+                            </div>
+                            <button class="basket-mobile-trash-btn button" type="button">
+                                <svg class="trash-btn-logo" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-trash"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </a>
             </li>
         </ul>
-        <button class="basket-mobile-form-btn button" type="submit"><svg class="icon-logo" width="65.08" height="94.73">
-            <use href="./images/icons.svg#icon-trash"></use>
-        </svg></button>
+        <button class="basket-mobile-form-btn button" type="button">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+
     </div>
 </div>
 
 
 <script src="./js/mobile-menu.js" type="module"></script>
+<script src="./js/basket-mobile.js" type="module"></script>
 </body>
 </html>
