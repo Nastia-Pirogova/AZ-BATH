@@ -1,6 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-trash-alt-delete-bin" viewBox="0 0 32 32">
+<symbol id="icon-trash" viewBox="0 0 32 32">
 <path fill="none" stroke="#565656" style="stroke: var(--color1, #565656)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.8347" d="M4.001 8h24M6.668 8v18.667c0 1.473 1.194 2.667 2.667 2.667h13.333c1.473 0 2.667-1.194 2.667-2.667v-18.667M10.668 8v-2.667c0-1.473 1.194-2.667 2.667-2.667h5.333c1.473 0 2.667 1.194 2.667 2.667v2.667"></path>
 </symbol>
 <symbol id="icon-cross" viewBox="0 0 32 32">

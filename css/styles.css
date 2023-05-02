@@ -632,7 +632,9 @@ a.footer-logo > h2{
 .present-img-bg{
     display: block;
 }
-
+.footer-logo {
+    text-align: center;
+}
 
 @media screen and (min-width: 1200px) {
     .container {

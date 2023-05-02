@@ -45,14 +45,10 @@
 }
 
 
-
-
-
 .product-info-price-value {
     font-size: 24px;
     font-weight: 600;
 }
-
 
 
 .product-delivery > span {
@@ -94,12 +90,6 @@
 }
 
 
-
-
-
-
-
-
 .ordering-container {
     display: flex;
     gap: 35px;
@@ -127,6 +117,7 @@
     margin-bottom: 11px;
     text-align: left;
 }
+
 .minus-btn, .plus-btn {
     background-color: transparent;
     color: var(--black);
@@ -134,6 +125,7 @@
     border: none;
     font-size: 34px;
 }
+
 .product-box-img {
     width: 48px;
 }
@@ -146,8 +138,9 @@
     width: 49px;
     text-align: center;
 }
+
 .product-info-price-item {
-    margin-right:23px;
+    margin-right: 23px;
     display: flex;
     border: 1px solid var(--black);
     background-color: var(--white);
@@ -163,7 +156,7 @@
     border-bottom: 1px solid var(--silver);
 }
 
-.ordering-form-btn-mobile{
+.ordering-form-btn-mobile {
     padding: 15px 28px;
     font-weight: 400;
     font-size: 16px;
@@ -171,7 +164,7 @@
     width: 100%;
 }
 
-.ordering-form-btn{
+.ordering-form-btn {
     display: none;
 }
 
@@ -185,6 +178,7 @@ section.ordering {
         margin: auto;
         text-align: center;
     }
+
     .product-delivery {
         font-size: 24px;
         font-weight: 600;
@@ -194,9 +188,11 @@ section.ordering {
         border-top: 1px solid var(--silver);
         border-bottom: 1px solid var(--silver);
     }
+
     section.ordering {
         margin: 101px 0 200px 0;
     }
+
     .minus-btn, .plus-btn {
         background-color: transparent;
         color: var(--black);
@@ -204,6 +200,7 @@ section.ordering {
         border: none;
         font-size: 34px;
     }
+
     .ordering-title {
         font-weight: 400;
         font-size: 36px;
@@ -218,19 +215,23 @@ section.ordering {
         margin-bottom: 26px;
         text-align: left;
     }
+
     .product-box-img {
         width: 108px;
     }
+
     .ordering-title-descr {
         font-size: 36px;
         text-align: left;
     }
+
     .product-info-price-item {
         margin-right: 100px;
         display: flex;
         border: 1px solid var(--black);
         background-color: var(--white);
     }
+
     .ordering-form {
         border: 1px solid var(--silver);
         padding: 32px 60px 50px 18px;
@@ -277,7 +278,7 @@ section.ordering {
     }
 
     .product-list-result {
-        padding: 32px 25px 22px 14px;
+        padding: 32px 25px 22px 25px;
         border: 1px solid var(--silver);
         height: 100%;
         width: 515px;
@@ -290,7 +291,8 @@ section.ordering {
         text-align: left;
         display: block;
     }
-    .ordering-form-btn-mobile{
+
+    .ordering-form-btn-mobile {
         display: none;
     }
 }
