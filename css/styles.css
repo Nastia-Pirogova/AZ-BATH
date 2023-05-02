@@ -20,6 +20,10 @@
     --silver: #D9D9D9;
     --ivory: #EAE6DD;
 }
+::selection{
+  background-color: var(--ivory);
+    color: var(--brown);
+}
 
 img {
     display: block;
