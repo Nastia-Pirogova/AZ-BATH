@@ -635,6 +635,8 @@ a.footer-logo > h2{
 
 .present-img-bg{
     display: block;
+    height: 266px;
+    width: 159px;
 }
 .footer-logo {
     text-align: center;
