@@ -91,24 +91,31 @@
     <section class="product-card">
         <div class="container">
             <div class="product-card-inner">
-                <img src="./images/product-card-1.jpg " class="product-card-img" alt="Олія для тіла AZ BATH" width="206"
-                     height="309">
+                <h2 class="product-card-title-mobile">ОЛІЯ ДЛЯ ТІЛА AZ BATH</h2>
+                <img src="./images/product-card-1.jpg " class="product-card-img" alt="Олія для тіла AZ BATH" width="520"
+                     height="976">
                 <div class="product-card-info">
                     <h2 class="product-card-title">ОЛІЯ ДЛЯ ТІЛА AZ BATH</h2>
                     <div class="product-card-price">
                         <span>670</span>
-                        <span>₴</span>
+                        <span> ₴</span>
                         <p>100ml</p>
                     </div>
-                    <select class="product-card-select"
-                            name="quantity" id=""
-                            required="">
-                        <option value="">Оберіть аромат</option>
-                        <option value="">Ванільна груша&шампанське SPF 0</option>
-                        <option value="">Манго&маракуйя SPF 6</option>
-                        <option value="">Мандарин&ванільний крем SPF 10</option>
-                        <option value="">М‘ятна малина&троянда SPF 15</option>
-                        <option value="">Бергамот Лемонграс SPF 30</option>
+                    <div class=" product-card-quantity-mobile">
+                        <button type="button" class="minus minus-btn">-</button>
+                        <input type="number" id="#" name="" value="1" data-min="1" data-id="" data-label=""
+                               class="product-card-input-quantity">
+                        <button type="button" class="plus plus-btn">+</button>
+                    </div>
+
+                    <button class=" button product-card-btn-add-mobile" type="submit">КУПИТИ</button>
+                    <select class="product-card-select" name="quantity" id="" required="">
+                        <option value="" class="product-card-option">Оберіть аромат</option>
+                        <option value="" class="product-card-option">Ванільна груша&шампанське SPF 0</option>
+                        <option value="" class="product-card-option">Манго&маракуйя SPF 6</option>
+                        <option value="" class="product-card-option">Мандарин&ванільний крем SPF 10</option>
+                        <option value="" class="product-card-option">М‘ятна малина&троянда SPF 15</option>
+                        <option value="" class="product-card-option">Бергамот Лемонграс SPF 30</option>
                     </select>
                     <div class="product-card-descr">
                         <b>Опис:</b><span>В один флакон будь якої олійки входять:</span>
@@ -129,20 +136,66 @@
                     </div>
 
                     <div class="product-card-btns">
-                        <div class="product-card-quantity">
+                        <div class="product-card-quantity product-card-quantity-desktop">
                             <button type="button" class="minus minus-btn">-</button>
                             <input type="number" id="#" name="" value="1" data-min="1" data-id="" data-label=""
                                    class="product-card-input-quantity">
                             <button type="button" class="plus plus-btn">+</button>
                         </div>
                         <button class="product-card-btn-add button" type="submit">ДОДАТИ В КОШИК</button>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="bestsellers">
+        <div class="container container-bestsellers">
+            <h2 class="title">ІНШІ ТОВАРИ</h2>
+            <ul class="bestsellers-list list">
+                <li>
+                    <a href="#" class="item-bestseller">
+                        <img src="./images/bestseller-1.jpg " class="bestseller-img" alt="product" width="342"
+                             height="404">
+                        <div class="item-bestseller-descr">
+                            <h3 class="bestseller-title">AZ BATH SHAMPОО для всіх типів волосся</h3>
+                            <span class="bestseller-price">
+                                <span>410</span>
+                                <span> ₴</span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item-bestseller">
+                        <img src="./images/bestseller-2.jpg " class="bestseller-img" alt="product" width="342"
+                             height="404">
+                        <div class="item-bestseller-descr">
+                            <h3 class="bestseller-title bestseller-title-2">Олія для тіла AZ BATH</h3>
+                            <span class="bestseller-price">
+                                <span>670</span>
+                                <span> ₴</span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="item-bestseller">
+                        <img src="./images/bestseller-3.jpg " class="bestseller-img" alt="product" width="342"
+                             height="404">
+                        <div class="item-bestseller-descr">
+                            <h3 class="bestseller-title">Олія для кінчиків волосся AZ BATH</h3>
+                            <span class="bestseller-price">
+                                <span>490</span>
+                                <span> ₴</span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
 
+
+            </ul>
+        </div>
+    </section>
     <footer class="footer" id="footer">
         <div class="container">
             <nav class="footer-navigation ">
