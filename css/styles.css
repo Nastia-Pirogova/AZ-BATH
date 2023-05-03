@@ -31,9 +31,9 @@ img {
     height: auto;
 }
 
-/*html {*/
-/*    scroll-behavior: smooth;*/
-/*}*/
+html {
+    scroll-behavior: smooth;
+}
 
 
 .list {
