@@ -181,13 +181,5 @@ section.catalogue {
     .catalog-product-item:hover .catalog-product-btn{
         opacity: 1;
     }
-
-    .catalog-product-img{
-        transition: transform 0.2s ease-in-out;
-    }
-
-    .catalog-product-item:hover .catalog-product-img{
-
-        /*transform: scale(1.1);*/
-    }
+    
 }
