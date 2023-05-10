@@ -165,6 +165,7 @@ select {
         display: flex;
         gap: 67px;
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .product-card-btn-add-mobile {
