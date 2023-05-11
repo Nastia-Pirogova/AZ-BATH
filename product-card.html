@@ -65,11 +65,13 @@
     <ul class="mobile-header-list list ">
         <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
         </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#delivery-payment">Доставка</a>
+        <li class="mobile-header-item "><a class="mobile-header-link link "
+                                           href="index.html#delivery-payment">Доставка</a>
         </li>
         <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#reviews">Відгуки</a>
         </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#certificate">Сертифікати</a>
+        <li class="mobile-header-item "><a class="mobile-header-link link "
+                                           href="index.html#certificate">Сертифікати</a>
         </li>
         <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
         </li>
@@ -96,20 +98,21 @@
                      height="976">
                 <div class="product-card-info">
                     <h2 class="product-card-title">ОЛІЯ ДЛЯ ТІЛА AZ BATH</h2>
-                    <div class="product-card-price">
-                        <span>670</span>
-                        <span> ₴</span>
-                        <p>100ml</p>
-                    </div>
-                    <div class=" product-card-quantity-mobile">
-                        <button type="button" class="minus minus-btn">-</button>
-                        <input type="number" id="input-quantity" name="" value="1" data-min="1" data-id="" data-label=""
-                               class="product-card-input-quantity">
-                        <button type="button" class="plus plus-btn">+</button>
-                    </div>
 
-                    <button class=" button product-card-btn-add-mobile" type="submit">КУПИТИ</button>
-                    <select class="product-card-select" name="quantity" id="product-card-select" required="">
+<!--                    <div class=" product-card-quantity-mobile">-->
+<!--                        <button type="button" class="minus minus-btn">-</button>-->
+<!--                        <input type="number" id="input-quantity" name="" value="1" data-min="1" data-id="" data-label=""-->
+<!--                               class="product-card-input-quantity">-->
+<!--                        <button type="button" class="plus plus-btn">+</button>-->
+<!--                    </div>-->
+
+                    <div class="product-card-btns">
+                        <div class="product-card-price">
+                            <span>670</span>
+                            <span> ₴</span>
+                            <p>100ml</p>
+                        </div>
+                        <select class="product-card-select" name="quantity" id="product-card-select" required="">
                         <option value="" class="product-card-option">Оберіть аромат</option>
                         <option value="" class="product-card-option">Ванільна груша&шампанське SPF 0</option>
                         <option value="" class="product-card-option">Манго&маракуйя SPF 6</option>
@@ -117,6 +120,18 @@
                         <option value="" class="product-card-option">М‘ятна малина&троянда SPF 15</option>
                         <option value="" class="product-card-option">Бергамот Лемонграс SPF 30</option>
                     </select>
+                        <div class="total-btn-basket total-btn-basket-calc">
+                            <div class="product-card-quantity product-card-quantity-desktop">
+                                <button type="button" class="minus minus-btn">-</button>
+                                <input type="number" id="#" name="" value="1" data-min="1" data-id="" data-label=""
+                                       class="product-card-input-quantity js-quantity">
+                                <button type="button" class="plus plus-btn">+</button>
+                            </div>
+                            <button class="product-card-btn-add button" type="submit">ДОДАТИ В КОШИК</button>
+                        </div>
+                    </div>
+<!--                    <button class=" button product-card-btn-add-mobile" type="submit">КУПИТИ</button>-->
+
                     <div class="product-card-descr">
                         <b>Опис:</b><span>В один флакон будь якої олійки входять:</span>
                         <p>Олія солодкого мигдалю, Олія виноградних кісточок, Олія авокадо, Касторова олія, Олія з
@@ -135,15 +150,7 @@
                             Нанести масажними рухами кілька крапель олії на чисту шкіру.</p>
                     </div>
 
-                    <div class="product-card-btns">
-                        <div class="product-card-quantity product-card-quantity-desktop">
-                            <button type="button" class="minus minus-btn">-</button>
-                            <input type="number" id="#" name="" value="1" data-min="1" data-id="" data-label=""
-                                   class="product-card-input-quantity">
-                            <button type="button" class="plus plus-btn">+</button>
-                        </div>
-                        <button class="product-card-btn-add button" type="submit">ДОДАТИ В КОШИК</button>
-                    </div>
+
                 </div>
             </div>
         </div>

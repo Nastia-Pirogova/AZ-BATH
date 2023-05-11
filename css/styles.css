@@ -660,12 +660,33 @@ a.item-bestseller {
     justify-content: space-between;
 }
 
+.total-btn-basket{
+    display: flex;
+    gap: 20px;
+}
+
+.total-btn-basket-calc{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+button.product-card-btn-add.button {
+    padding: 20px;
+}
+.product-card-quantity.product-card-quantity-desktop {
+    border: 1px solid #000;
+    width: 182px;
+}
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;
         margin: auto;
     }
-
+    .total-btn-basket-calc {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
     .icon-logo {
         height: 94.73px;
         width: 65.08px;
