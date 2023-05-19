@@ -677,6 +677,9 @@ button.product-card-btn-add.button {
     border: 1px solid #000;
     width: 182px;
 }
+
+
+
 @media screen and (min-width: 1200px) {
     .container {
         width: 1165px;

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/basket.css">
 </head>
 <body class="body">
+
 <header class="header">
     <div class="container header-container">
         <nav class="header-navigation ">
@@ -53,134 +54,124 @@
         </div>
     </div>
 </header>
-<div class="mobile-menu js-menu-container ">
-    <button type="button" class="modal-btn-close js-close-menu">
-        <svg class="modal-close-svg" width="8px" height="8px">
-            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
-        </svg>
-    </button>
-    <ul class="mobile-header-list list ">
-        <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#delivery-payment">Доставка</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#reviews">Відгуки</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#certificate">Сертифікати</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
-        </li>
-    </ul>
-</div>
-<main>
-<section class="basket">
-    <div class="basket-container">
-        <div class="basket-string"><h2 class="basket-title">КОШИК</h2>
-            <div class="basket-string-number-cost">
-                <span>Кількість</span>
-                <span>Вартість</span>
-            </div>
-        </div>
 
-        <div class="basket-list-result">
-            <ul class="basket-list-product">
-                <li class="basket-list-product-item">
-                    <div class="basket-box">
-                        <img class="basket-box-img" src="./images/catalog-product-13.jpg" alt="Комбо олій 1+1=3">
-                        <div class="basket-info">
-                            <h4 class="basket-info-title">Комбо олій 1+1=3</h4>
-                            <div class="basket-info-price">
-                                <div class="basket-info-price-item">
-                                    <button type="button" class="minus minus-btn">-</button>
-                                    <input type="number" id="basket-price-input" name="" value="1" data-min="1"
-                                           data-id="basket-from" data-label="" class="basket-info-price-item-input">
-                                    <button type="button" class="plus plus-btn">+</button>
-                                </div>
-                                <div class="basket-info-price-value">
-                                    <span><span>1430</span>₴</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="basket-list-product-item">
-                    <div class="basket-box">
-                        <img class="basket-box-img" src="./images/catalog-product-13.jpg" alt="Комбо олій 1+1=3">
-                        <div class="basket-info">
-                            <h4 class="basket-info-title">Комбо олій 1+1=3</h4>
-                            <div class="basket-info-price">
-                                <div class="basket-info-price-item">
-                                    <button type="button" class="minus minus-btn">-</button>
-                                    <input type="number" id="basket-price-input-2" name="" value="1" data-min="1"
-                                           data-id="basket-from" data-label="" class="basket-info-price-item-input">
-                                    <button type="button" class="plus plus-btn">+</button>
-                                </div>
-                                <div class="basket-info-price-value">
-                                    <span><span>1430</span>₴</span>
+<main>
+    <section class="basket">
+        <div class="basket-container">
+            <div class="basket-string"><h2 class="basket-title">КОШИК</h2>
+                <div class="basket-string-number-cost">
+                    <span>Кількість</span>
+                    <span>Вартість</span>
+                </div>
+            </div>
+
+            <div class="basket-list-result">
+                <ul class="basket-list-product">
+                    <li class="basket-list-product-item">
+                        <div class="basket-box">
+                            <img class="basket-box-img" src="./images/catalog-product-13.jpg" alt="Комбо олій 1+1=3">
+                            <div class="basket-info">
+                                <h4 class="basket-info-title">Комбо олій 1+1=3</h4>
+                                <div class="basket-info-price">
+                                    <div class="basket-info-price-item">
+                                        <button type="button" class="minus minus-btn">-</button>
+                                        <input type="number" id="basket-price-input " name="" value="1" data-min="1"
+                                               data-id="basket-from" data-label=""
+                                               class="basket-info-price-item-input js-quantity">
+                                        <button type="button" class="plus plus-btn">+</button>
+                                    </div>
+                                    <div class="basket-info-price-value">
+                                        <span><span>1430</span>₴</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </li>
+                    <li class="basket-list-product-item">
+                        <div class="basket-box">
+                            <img class="basket-box-img" src="./images/catalog-product-13.jpg" alt="Комбо олій 1+1=3">
+                            <div class="basket-info">
+                                <h4 class="basket-info-title">Комбо олій 1+1=3</h4>
+                                <div class="basket-info-price">
+                                    <div class="basket-info-price-item">
+                                        <button type="button" class="minus minus-btn">-</button>
+                                        <input type="number" id="basket-price-input-2 " name="" value="1" data-min="1"
+                                               data-id="basket-from" data-label=""
+                                               class="basket-info-price-item-input js-quantity">
+                                        <button type="button" class="plus plus-btn">+</button>
+                                    </div>
+                                    <div class="basket-info-price-value">
+                                        <span><span>1430</span>₴</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="basket-bottom-result">
+                    <a class="basket-go-shop">
+                        <svg class="basket-inner-arrow" width="99" height="10">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                        <p>ПОВЕРНУТИСЬ ДО ПОКУПОК</p></a>
+                    <div class="basket-bottom-result-descr">
+                        <div class="basket-total-price"><p>Всього</p> <span><span>1430</span>₴</span></div>
+                        <button class="basket-form-btn button" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
                     </div>
-                </li>
-            </ul>
-            <div class="basket-bottom-result">
-                <a class="basket-go-shop">
-                    <svg class="basket-inner-arrow" width="99" height="10">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                    <p>ПОВЕРНУТИСЬ ДО ПОКУПОК</p></a>
-                <div class="basket-bottom-result-descr">
-                    <div class="basket-total-price"><p>Всього</p> <span><span>1430</span>₴</span></div>
-                    <button class="basket-form-btn button" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="recommended-products">
-        <div class="container-recommended-products">
-            <p class="recommended-title">Рекомендовані товари</p>
-            <ul class="recommended-products-list list">
-                <li class="recommended-products-item">
-                    <a href="#" class="item-recommended-products">
-                        <img src="./images/bestseller-1.jpg " class="recommended-products-img" alt="product" width="342" height="404">
-                        <div class="item-recommended-products-descr">
-                            <h3 class="recommended-products-title">AZ BATH SHAMPОО для всіх типів волосся</h3>
-                            <span class="recommended-products-price">
+        <div class="recommended-products">
+            <div class="container-recommended-products">
+                <p class="recommended-title">Рекомендовані товари</p>
+                <ul class="recommended-products-list list">
+                    <li class="recommended-products-item">
+                        <a href="#" class="item-recommended-products">
+                            <img src="./images/bestseller-1.jpg " class="recommended-products-img" alt="product"
+                                 width="342" height="404">
+                            <div class="item-recommended-products-descr">
+                                <h3 class="recommended-products-title">AZ BATH SHAMPОО для всіх типів волосся</h3>
+                                <span class="recommended-products-price">
                                 <span>410</span>
                                 <span> ₴</span>
                             </span>
-                        </div>
-                    </a>
-                </li>
-                <li class="recommended-products-item">
-                    <a href="#" class="item-recommended-products">
-                        <img src="./images/bestseller-2.jpg " class="recommended-products-img" alt="product" width="342" height="404">
-                        <div class="item-recommended-products-descr">
-                            <h3 class="recommended-products-title recommended-products-title-2">Олія для тіла AZ BATH</h3>
-                            <span class="recommended-products-price">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommended-products-item">
+                        <a href="#" class="item-recommended-products">
+                            <img src="./images/bestseller-2.jpg " class="recommended-products-img" alt="product"
+                                 width="342" height="404">
+                            <div class="item-recommended-products-descr">
+                                <h3 class="recommended-products-title recommended-products-title-2">Олія для тіла AZ
+                                    BATH</h3>
+                                <span class="recommended-products-price">
                                 <span>670</span>
                                 <span> ₴</span>
                             </span>
-                        </div>
-                    </a>
-                </li>
-                <li class="recommended-products-item">
-                    <a href="#" class="item-recommended-products">
-                        <img src="./images/bestseller-3.jpg " class="recommended-products-img" alt="product" width="342" height="404">
-                        <div class="item-recommended-products-descr">
-                            <h3 class="recommended-products-title">Олія для кінчиків волосся AZ BATH</h3>
-                            <span class="recommended-products-price">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommended-products-item">
+                        <a href="#" class="item-recommended-products">
+                            <img src="./images/bestseller-3.jpg " class="recommended-products-img" alt="product"
+                                 width="342" height="404">
+                            <div class="item-recommended-products-descr">
+                                <h3 class="recommended-products-title">Олія для кінчиків волосся AZ BATH</h3>
+                                <span class="recommended-products-price">
                                 <span>490</span>
                                 <span> ₴</span>
                             </span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</main>
+
 <footer class="footer" id="footer">
     <div class="container">
         <nav class="footer-navigation ">
@@ -317,8 +308,30 @@
         </nav>
     </div>
 </footer>
-</main>
+
+<div class="mobile-menu js-menu-container ">
+    <button type="button" class="modal-btn-close js-close-menu">
+        <svg class="modal-close-svg" width="8px" height="8px">
+            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
+        </svg>
+    </button>
+    <ul class="mobile-header-list list ">
+        <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link "
+                                           href="index.html#delivery-payment">Доставка</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="index.html#reviews">Відгуки</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link "
+                                           href="index.html#certificate">Сертифікати</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
+        </li>
+    </ul>
+</div>
 
 <script src="./js/mobile-menu.js" type="module"></script>
+<script src="./js/calculator.js" type="module"></script>
 </body>
 </html>

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/basket.css">
 </head>
 <body class="body">
+
 <header class="header">
     <div class="container header-container">
         <nav class="header-navigation ">
@@ -56,27 +57,6 @@
         </div>
     </div>
 </header>
-
-<div class="mobile-menu js-menu-container ">
-    <button type="button" class="modal-btn-close js-close-menu">
-        <svg class="modal-close-svg" width="8px" height="8px">
-            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
-        </svg>
-    </button>
-    <ul class="mobile-header-list list ">
-        <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="#delivery-payment">Доставка</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="#reviews">Відгуки</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="#certificate">Сертифікати</a>
-        </li>
-        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
-        </li>
-    </ul>
-</div>
-
 <main>
     <section class="hero section hero-bg">
         <div class="container">
@@ -219,7 +199,6 @@
             </div>
         </div>
     </section>
-
     <section class="reviews" id="reviews">
         <div class="container container-reviews">
             <h2 class="title">ВІДГУКИ НА НАШУ КОСМЕТИКУ</h2>
@@ -277,7 +256,8 @@
             </div>
         </div>
     </section>
-    <footer class="footer" id="footer">
+</main>
+<footer class="footer" id="footer">
         <div class="container">
             <nav class="footer-navigation ">
                 <div class="footer-navigation-mobile">
@@ -416,8 +396,26 @@
             </nav>
         </div>
     </footer>
-</main>
 
+<div class="mobile-menu js-menu-container ">
+    <button type="button" class="modal-btn-close js-close-menu">
+        <svg class="modal-close-svg" width="8px" height="8px">
+            <use class="modal-close-use" href="./images/icons.svg#icon-cross"></use>
+        </svg>
+    </button>
+    <ul class="mobile-header-list list ">
+        <li class="mobile-header-item"><a class="mobile-header-link link " href="catalogue.html">Каталог</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#delivery-payment">Доставка</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#reviews">Відгуки</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#certificate">Сертифікати</a>
+        </li>
+        <li class="mobile-header-item "><a class="mobile-header-link link " href="#footer">Контакти</a>
+        </li>
+    </ul>
+</div>
 <div class="backdrop is-hidden" data-modal>
     <div class="basket-mobile">
         <div class="basket-mobile-top">
